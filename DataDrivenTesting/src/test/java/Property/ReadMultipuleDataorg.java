@@ -23,7 +23,7 @@ public class ReadMultipuleDataorg {
 		
 		Workbook wb=WorkbookFactory.create(fis);
 		
-              org.apache.poi.ss.usermodel.Sheet sh = wb.getSheet("org");
+              org.apache.poi.ss.usermodel.Sheet sh = wb.getSheet("org"); 
               
               int rowcount=sh.getLastRowNum();
               

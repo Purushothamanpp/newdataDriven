@@ -3,17 +3,11 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.pac1.ContactTestScript">
+      <class name="practice.pom.repository.ReadDataMutipuleData">
         <methods>
-          <include name="configBC"/>
-          <include name="configBS"/>
-          <include name="contactTest2"/>
-          <include name="configAC"/>
-          <include name="configAS"/>
-          <include name="configAfterMethod"/>
-          <include name="configBM"/>
+          <include name="ReadDataMutipuleData1"/>
         </methods>
-      </class> <!-- com.pac1.ContactTestScript -->
+      </class> <!-- practice.pom.repository.ReadDataMutipuleData -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

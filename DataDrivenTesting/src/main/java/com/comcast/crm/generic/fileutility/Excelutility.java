@@ -10,7 +10,7 @@ import org.apache.poi.ss.usermodel.Workbook;
 import org.apache.poi.ss.usermodel.WorkbookFactory;
 
 
-public class Excelutility {
+public class Excelutilityx{
  
 	public String getDataFromExcel(String sheetName,int rowNum,int celnum) throws Throwable  {
 		
@@ -21,7 +21,7 @@ public class Excelutility {
         Sheet sh=wb.getSheet(sheetName); 
         
         String row=sh.getRow(rowNum).getCell(celnum).toString();
-       
+                
               return row;
 		
 	}
@@ -39,6 +39,8 @@ public class Excelutility {
 		}
  public void SetDataIntoExcel(String sheetName   ,int rowNum,int celnum ,String set) throws Throwable		{
 	  
+	 
+	 
 	  FileInputStream fis=new FileInputStream("./testScriptdata/testscriptdata.xlsx");
 
 		Workbook wb=WorkbookFactory.create(fis);
@@ -48,6 +50,8 @@ public class Excelutility {
 		FileOutputStream fos=new FileOutputStream("./testScriptdata/testscriptdata.xlsx");
 		wb.write(fos);
 		wb.close();
+		
+		
 		
  }
  

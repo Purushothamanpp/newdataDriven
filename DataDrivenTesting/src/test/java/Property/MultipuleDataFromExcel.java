@@ -21,21 +21,44 @@ public class MultipuleDataFromExcel {
 		Workbook wb=WorkbookFactory.create(fis);
 		
               org.apache.poi.ss.usermodel.Sheet sh = wb.getSheet("Sheet1");
-       int rowshow=sh.getLastRowNum();
+     
+              
+
+             
+             for(int i=0;i<=10;i++) {
+            	 Row row=sh.getRow(i);
+                 
+                 
+                 int cellcount=row.getLastCellNum();
+                  
+                for(int j=0;j<cellcount;j++)
+                  {
+                	  
+                 String columndata=row.getCell(j).toString();
+                 //String column2data=row1.getCell(i).toString();
+                 
+                 System.out.print(columndata+" ");
+                 
+                  }
+                System.out.println();
+            	 
+             }
+ /* int rowshow=sh.getLastRowNum();
              
              for(int i=1;i<=rowshow;i++) {
             	 
-                 Row row=sh.getRow(i);
+                 Row row=sh.getRow(0);
+                 Row row1=sh.getRow(1);
                  
+                 String column1data=row.getCell(i).toString();
+                 String column2data=row1.getCell(i).toString();
                  
-                 String column1data=row.getCell(0).toString();
-                 String column2data=row.getCell(1).toString();
-                 System.out.println(column1data  +"\t"+ column2data);
+                 System.out.println(column1data  +"\t"+column2data);
             	 
             	 
              }
+        */     
              
-            
   
          
              

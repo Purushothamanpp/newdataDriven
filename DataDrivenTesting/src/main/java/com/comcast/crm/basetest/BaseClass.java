@@ -22,16 +22,15 @@ import com.comcast.crm.generic.webdriverutility.WebdriverUtility;
 import com.comcast.crm.objectrepositoryUtility.HomePage;
 import com.comcast.crm.objectrepositoryUtility.Loginpage;
 
-
 public class BaseClass {
 
-	public 	 DataBaseutility dblib = new DataBaseutility();
-	public  Fileutility flib = new Fileutility();
-	public  WebDriver driver = null;
-	public static  WebDriver sdriver;
-	public  Excelutility Elib = new Excelutility();
-	public  JavaUtility jlib = new JavaUtility();
-	public  WebdriverUtility weblib = new WebdriverUtility();
+	public DataBaseutility dblib = new DataBaseutility();
+	public Fileutility flib = new Fileutility();
+	public WebDriver driver = null;
+	public static WebDriver sdriver;
+	public Excelutility Elib = new Excelutility();
+	public JavaUtility jlib = new JavaUtility();
+	public WebdriverUtility weblib = new WebdriverUtility();
 	ExtentSparkReporter spark;
 	public ExtentReports report;
 

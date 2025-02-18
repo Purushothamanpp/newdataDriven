@@ -31,6 +31,7 @@ public class ReadDataFromExcelTest {
          //step4 get the control of the "1st" Row
         
        Row row=sh.getRow(1);
+       
        // step5:get the control of the "2st" cell & read the string data 
        
        String data=  row.getCell(3).toString();
